@@ -13,13 +13,6 @@ class Kafka:
     KAFKA_MAX_POLL_RECORDS = env.int("KAFKA_MAX_POLL_RECORDS")
 
 
-class KafkaAuth:
-    SASL_PLAIN_USERNAME = env.str("SASL_PLAIN_USERNAME")
-    SASL_PLAIN_PASSWORD = env.str("SASL_PLAIN_PASSWORD")
-    SECURITY_PROTOCOL = env.str("SECURITY_PROTOCOL")
-    SASL_MECHANISM = env.str("SASL_MECHANISM")
-
-
 class MongoDb:
     MONGO_URI = env.str("MONGO_URI")
     MONGO_DB = env.str("MONGO_DB")
